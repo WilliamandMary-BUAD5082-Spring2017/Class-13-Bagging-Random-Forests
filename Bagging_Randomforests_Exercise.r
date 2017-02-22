@@ -43,9 +43,9 @@ print(err.rate)
 
 
 install.packages("caret")
-install.package("mlbench")
-install.package("rpart")
-install.package("Kernlab")
+install.packages("mlbench")
+install.packages("rpart")
+install.packages("Kernlab")
 library(caret)
 library(mlbench)
 library(MASS)
