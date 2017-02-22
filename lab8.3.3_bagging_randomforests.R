@@ -50,9 +50,9 @@ rf.boston = randomForest(medv~., data=Boston, subset=train , mtry=6, importance=
 rf.boston
 
 # Evaluate random forest model on test set
-yhat.rf = predict (rf.boston ,newdata =Boston [-train ,])
+yhat.rf = predict (rf.boston, newdata=Boston[-train ,])
 # MSE
-mean((yhat.rf - boston.test)^2)
+mean((yhat.rf-boston.test)^2)
 
 # View the importance of each variable
 # The %IncMSE is based upon the mean decrease of accuracy in predictions on the out of bag samples
