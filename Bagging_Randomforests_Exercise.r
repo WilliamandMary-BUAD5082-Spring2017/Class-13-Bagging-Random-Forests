@@ -44,8 +44,13 @@ print(err.rate)
 
 install.packages("caret")
 install.package("mlbench")
+install.package("rpart")
+install.package("Kernlab")
 library(caret)
 library(mlbench)
+library(MASS)
+library(rpart)
+library(kernlab)
 # prepare training scheme
 control <- trainControl(method="repeatedcv", number=10, repeats=3)
 # CART
